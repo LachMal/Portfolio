@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#TS-2] Nieprawidłowa funkcjonalność przycisku &quot;Ukryj teorię i zadania&quot; (C&amp;F Ciało strony pkt. 1.1, 1.2 )</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://mlach.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [TS-2]&nbsp;<a href="https://mlach.atlassian.net/browse/TS-2">Nieprawidłowa funkcjonalność przycisku &quot;Ukryj teorię i zadania&quot; (C&amp;F Ciało strony pkt. 1.1, 1.2 )</a>
+            <span class="subText">
+               Utworzono: 11/paź/23                   &nbsp;Zaktualizowano: 12/paź/23
+
+                                                    &nbsp;Rozwiązane: 12/paź/23
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Gotowe</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Projekt:</b></td>
+        <td width="80%"><a href="https://mlach.atlassian.net/secure/BrowseProject.jspa?id=10002">TestowyGoIt</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Komponenty:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Ma wpływ na wersje:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Wersje do poprawienia:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Typ:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Błąd
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priorytet:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Osoba zgłaszająca:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:87ed4727-9797-4996-880e-652478d9f38b"
+                id="word_reporter_712020:87ed4727-9797-4996-880e-652478d9f38b"
+                href="https://mlach.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A87ed4727-9797-4996-880e-652478d9f38b">
+                    Małgo La
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Osoba przypisana:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:87ed4727-9797-4996-880e-652478d9f38b"
+                id="word_assignee_712020:87ed4727-9797-4996-880e-652478d9f38b"
+                href="https://mlach.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A87ed4727-9797-4996-880e-652478d9f38b">
+                    Małgo La
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Rozwiązanie:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Gotowe
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Głosy:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Etykiety:</b>
+        </td>
+        <td id="labels-10001-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Brak
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Pozostały koszt:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Czas poświęcony:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Pierwotne oszacowanie:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Załączniki:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://mlach.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="Plik PNG">
+                    image-20231011-125007.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://mlach.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="Plik PNG">
+                    image-20231011-125034.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10001-value" class="value" bgcolor="#ffffff" width="80%">      0|i00007:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Opis</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Warunki rozpoczęcia:</p>
+
+<p>Otwarta strona:</p>
+
+<p><a href="https://qa-autocheck-test.netlify.app/?token=d5fcc3783ba50fcac78b5a5ea8e4d69f6fe51ed8368bc618a58a846ad8b03a63&amp;block=nop678917" class="external-link" rel="nofollow noreferrer">Wejście do testowania (qa-autocheck-test.netlify.app)</a></p>
+
+<p>Kroki do odtworzenia:</p>
+
+<ol>
+	<li>Na otwartej stronie <a href="https://qa-autocheck-test.netlify.app/?token=d5fcc3783ba50fcac78b5a5ea8e4d69f6fe51ed8368bc618a58a846ad8b03a63&amp;block=nop678917" class="external-link" rel="nofollow noreferrer">Wejście do testowania (qa-autocheck-test.netlify.app)</a> kliknij w przycisk “Ukryj teorię i zadania“.</li>
+</ol>
+
+
+<p>Aktualny rezultat:</p>
+
+<ol>
+	<li>Sekcja teorii zwija się, przycisk zmniejsza się do wielkości ikony , a okno edytora NIE rozwija się na całą szerokość ekranu .</li>
+</ol>
+
+
+<p>Przewidywany rezultat:</p>
+
+<ol>
+	<li>Okno edytora rozwija się na całą szerokość ekranu, zgodnie z dokumentacją</li>
+</ol>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Komentarze</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-10000"><td bgcolor="#f0f0f0">
+            Skomentowane przez  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:87ed4727-9797-4996-880e-652478d9f38b"
+                id="word_commented_712020:87ed4727-9797-4996-880e-652478d9f38b"
+                href="https://mlach.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A87ed4727-9797-4996-880e-652478d9f38b">
+                    Małgo La
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">11/paź/23</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-10000"><td bgcolor="#ffffff">
+            <p>Obecny rezultat:</p>
+
+<p><span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/10000" height="581" width="1251" style="border: 0px solid black" /></span></p>
+
+<p>Oczekiwany rezultat:</p>
+
+<p><span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/10001" height="315" width="720" style="border: 0px solid black" /></span></p>
+        </td></tr>
+            </table>
+Wygenerowane (Thu Oct 12 17:46:35 UTC 2023) przez Małgo La z użyciem systemu Jira 1001.0.0-SNAPSHOT#100238-sha1:8f8fcebfdab34a263eb1a3050ac1b5cd823a302f.
+
+</body>
+</html>
