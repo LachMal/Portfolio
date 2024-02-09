@@ -1,0 +1,1231 @@
+{
+	"info": {
+		"_postman_id": "12be7879-c47c-42ee-9598-7f6c6c036774",
+		"name": "ML_Kolekcja1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30327664"
+	},
+	"item": [
+		{
+			"name": "Pierwsze zapytanie_accounts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"ML_Asset account_1\");\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/accounts",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zadanie rachunki - GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"MaL3\");\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/bills",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"bills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zadanie waluty - GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Coders Lab Coin\");\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/currencies",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zadanie waluty - POST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([405]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"enabled\": true,\r\n  \"default\": false,\r\n  \"code\": \"MLa_dollar\",\r\n  \"name\": \"MLa_Dolarsy\",\r\n  \"symbol\": \"MLa$$$\",\r\n  \"decimal_places\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/currencies/MLa_dollar",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"currencies",
+						"MLa_dollar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zmiana nazwy waluty",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Coders Lab Coin\");\r",
+							"});\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"enabled\": true,\r\n  \"default\": true,\r\n  \"code\": \"MLa_dollar\",\r\n  \"name\": \"Coders Lab Coin\",\r\n  \"symbol\": \"MLa$$$\",\r\n  \"decimal_places\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/currencies/MLa_dollar",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"currencies",
+						"MLa_dollar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usunięcie waluty",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/currencies/MLa_dollar",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"currencies",
+						"MLa_dollar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista kategorii -GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/categories",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dodanie kategorii",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"type\": \"categories\",\r\n    \"id\": \"2\",\r\n    \"attributes\": {\r\n      \"created_at\": \"2018-09-17T12:46:47+01:00\",\r\n      \"updated_at\": \"2018-09-17T12:46:47+01:00\",\r\n      \"name\": \"Edukacja\",\r\n      \"notes\": \"Uczę się Postmana\",\r\n      \"spent\": [\r\n        {\r\n          \"currency_id\": \"5\",\r\n          \"currency_code\": \"FR$$$\",\r\n          \"currency_symbol\": \"Forint$$$\",\r\n          \"currency_decimal_places\": 2,\r\n          \"sum\": \"-12423.45\"\r\n        }\r\n      ],\r\n      \"earned\": [\r\n        {\r\n          \"currency_id\": \"5\",\r\n          \"currency_code\": \"FR$$$\",\r\n          \"currency_symbol\": \"Forint$$$\",\r\n          \"currency_decimal_places\": 2,\r\n          \"sum\": \"123.45\"\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/categories",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dodanie waluty",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"enabled\": true,\r\n  \"default\": false,\r\n  \"code\": \"FR$$$\",\r\n  \"name\": \"ForintML\",\r\n  \"symbol\": \"Forint$$$\",\r\n  \"decimal_places\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/currencies",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"currencies"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "FR",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "ForintML",
+							"disabled": true
+						},
+						{
+							"key": "symbol",
+							"value": "F$F",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Szukanie transakcji - GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/search/transactions",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"search",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie konta2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 422\", function () {\r",
+							"    pm.response.to.have.status(422);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([422, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"MLachaccount\",\r\n  \"type\": \"asset\",\r\n  \"iban\": \"PL64249028811070674326153449\",\r\n  \"bic\": \"ALBPPLPW\",\r\n  \"account_number\": \"64249028811070674326153449\",\r\n  \"opening_balance\": \"-1012.12\",\r\n  \"opening_balance_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"virtual_balance\": \"123.45\",\r\n  \"currency_id\": \"1\",\r\n  \"currency_code\": \"EUR\",\r\n  \"active\": false,\r\n  \"order\": 1,\r\n  \"include_net_worth\": true,\r\n  \"account_role\": \"defaultAsset\",\r\n  \"credit_card_type\": \"monthlyFull\",\r\n  \"monthly_payment_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"liability_type\": \"loan\",\r\n  \"liability_direction\": \"credit\",\r\n  \"interest\": \"5.3\",\r\n  \"interest_period\": \"monthly\",\r\n  \"notes\": \"Some example notes\",\r\n  \"latitude\": 51.983333,\r\n  \"longitude\": 5.916667,\r\n  \"zoom_level\": 6\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/accounts",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie konta2 GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"My checking MLaccount\",\r\n  \"type\": \"asset\",\r\n  \"iban\": \"PL10105000997603123456789123\",\r\n  \"bic\": \"EBOSPLPWXXX\",\r\n  \"account_number\": \"10105000997603123456789123\",\r\n  \"opening_balance\": \"-1012.12\",\r\n  \"opening_balance_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"virtual_balance\": \"123.45\",\r\n  \"currency_id\": \"12\",\r\n  \"currency_code\": \"EUR\",\r\n  \"active\": false,\r\n  \"order\": 1,\r\n  \"include_net_worth\": true,\r\n  \"account_role\": \"defaultAsset\",\r\n  \"credit_card_type\": \"monthlyFull\",\r\n  \"monthly_payment_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"liability_type\": \"loan\",\r\n  \"liability_direction\": \"credit\",\r\n  \"interest\": \"5.3\",\r\n  \"interest_period\": \"monthly\",\r\n  \"notes\": \"Some example notes\",\r\n  \"latitude\": 51.983333,\r\n  \"longitude\": 5.916667,\r\n  \"zoom_level\": 6\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/accounts/6646",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"6646"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie konta3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 422\", function () {\r",
+							"    pm.response.to.have.status(422);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([422, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Account3_MLach\",\r\n  \"type\": \"asset\",\r\n  \"iban\": \"PL43124030736964740017988195\",\r\n  \"bic\": \"PKOPPLPW\",\r\n  \"account_number\": \"43124030736964740017988195\",\r\n  \"opening_balance\": \"-1012.12\",\r\n  \"opening_balance_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"virtual_balance\": \"123.45\",\r\n  \"currency_id\": \"1\",\r\n  \"currency_code\": \"EUR\",\r\n  \"active\": false,\r\n  \"order\": 1,\r\n  \"include_net_worth\": true,\r\n  \"account_role\": \"defaultAsset\",\r\n  \"credit_card_type\": \"monthlyFull\",\r\n  \"monthly_payment_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"liability_type\": \"loan\",\r\n  \"liability_direction\": \"credit\",\r\n  \"interest\": \"5.3\",\r\n  \"interest_period\": \"monthly\",\r\n  \"notes\": \"Some example notes\",\r\n  \"latitude\": 51.983333,\r\n  \"longitude\": 5.916667,\r\n  \"zoom_level\": 6\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/accounts",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie konta3 GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"My checking MLaccount\",\r\n  \"type\": \"asset\",\r\n  \"iban\": \"PL10105000997603123456789123\",\r\n  \"bic\": \"EBOSPLPWXXX\",\r\n  \"account_number\": \"10105000997603123456789123\",\r\n  \"opening_balance\": \"-1012.12\",\r\n  \"opening_balance_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"virtual_balance\": \"123.45\",\r\n  \"currency_id\": \"12\",\r\n  \"currency_code\": \"EUR\",\r\n  \"active\": false,\r\n  \"order\": 1,\r\n  \"include_net_worth\": true,\r\n  \"account_role\": \"defaultAsset\",\r\n  \"credit_card_type\": \"monthlyFull\",\r\n  \"monthly_payment_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"liability_type\": \"loan\",\r\n  \"liability_direction\": \"credit\",\r\n  \"interest\": \"5.3\",\r\n  \"interest_period\": \"monthly\",\r\n  \"notes\": \"Some example notes\",\r\n  \"latitude\": 51.983333,\r\n  \"longitude\": 5.916667,\r\n  \"zoom_level\": 6\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/accounts/6650",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"6650"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie konta",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"kontoZadanieMLach\",\r\n  \"type\": \"asset\",\r\n  \"iban\": \"PL70116004267741390539529284\",\r\n  \"bic\": \"BIGBPLPW\",\r\n  \"account_number\": \"70116004267741390539529284\",\r\n  \"opening_balance\": \"-1012.12\",\r\n  \"opening_balance_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"virtual_balance\": \"123.45\",\r\n  \"currency_id\": \"1\",\r\n  \"currency_code\": \"EUR\",\r\n  \"active\": false,\r\n  \"order\": 1,\r\n  \"include_net_worth\": true,\r\n  \"account_role\": \"cashWalletAsset\",\r\n  \"credit_card_type\": \"monthlyFull\",\r\n  \"monthly_payment_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"liability_type\": \"loan\",\r\n  \"liability_direction\": \"credit\",\r\n  \"interest\": \"5.3\",\r\n  \"interest_period\": \"monthly\",\r\n  \"notes\": \"Some example notes\",\r\n  \"latitude\": 51.983333,\r\n  \"longitude\": 5.916667,\r\n  \"zoom_level\": 6\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/accounts",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie konta GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"My checking 1account\",\r\n  \"type\": \"asset\",\r\n  \"iban\": \"PL27114020040000300201355387 \",\r\n  \"bic\": \"ALBPPLPW\",\r\n  \"account_number\": \"27114020040000300201355387 \",\r\n  \"opening_balance\": \"-1012.12\",\r\n  \"opening_balance_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"virtual_balance\": \"123.45\",\r\n  \"currency_id\": \"12\",\r\n  \"currency_code\": \"EUR\",\r\n  \"active\": false,\r\n  \"order\": 1,\r\n  \"include_net_worth\": true,\r\n  \"account_role\": \"cashWalletAsset\",\r\n  \"credit_card_type\": \"monthlyFull\",\r\n  \"monthly_payment_date\": \"2023-11-17T12:46:47+01:00\",\r\n  \"liability_type\": \"loan\",\r\n  \"liability_direction\": \"credit\",\r\n  \"interest\": \"5.3\",\r\n  \"interest_period\": \"monthly\",\r\n  \"notes\": \"Some example notes\",\r\n  \"latitude\": 51.983333,\r\n  \"longitude\": 5.916667,\r\n  \"zoom_level\": 6\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/accounts/6648",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"6648"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie budżetu",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Bud1_MLach\",\r\n  \"active\": false,\r\n  \"notes\": \"Some notes\",\r\n  \"auto_budget_type\": \"reset\",\r\n  \"auto_budget_currency_id\": \"12\",\r\n  \"auto_budget_currency_code\": \"EUR\",\r\n  \"auto_budget_amount\": \"2000\",\r\n  \"auto_budget_period\": \"monthly\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/budgets",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"budgets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zmiana nazwy budżetu",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sports Budget\",\r\n  \"active\": false,\r\n  \"notes\": \"Some notes\",\r\n  \"auto_budget_type\": \"reset\",\r\n  \"auto_budget_currency_id\": \"1\",\r\n  \"auto_budget_currency_code\": \"EUR\",\r\n  \"auto_budget_amount\": \"2000\",\r\n  \"auto_budget_period\": \"monthly\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/budgets/732",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"budgets",
+						"732"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie budżetu GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Bud1_MLach\",\r\n  \"active\": false,\r\n  \"notes\": \"Some notes\",\r\n  \"auto_budget_type\": \"reset\",\r\n  \"auto_budget_currency_id\": \"12\",\r\n  \"auto_budget_currency_code\": \"EUR\",\r\n  \"auto_budget_amount\": \"2000\",\r\n  \"auto_budget_period\": \"monthly\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/budgets/732",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"budgets",
+						"732"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie budżetu 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Bud2_MLach\",\r\n  \"active\": false,\r\n  \"notes\": \"Some notes\",\r\n  \"auto_budget_type\": \"reset\",\r\n  \"auto_budget_currency_id\": \"12\",\r\n  \"auto_budget_currency_code\": \"EUR\",\r\n  \"auto_budget_amount\": \"50000\",\r\n  \"auto_budget_period\": \"monthly\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/budgets",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"budgets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zmiana nazwy budżetu 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Fun Budget\",\r\n  \"active\": false,\r\n  \"notes\": \"Some notes\",\r\n  \"auto_budget_type\": \"reset\",\r\n  \"auto_budget_currency_id\": \"1\",\r\n  \"auto_budget_currency_code\": \"EUR\",\r\n  \"auto_budget_amount\": \"50000\",\r\n  \"auto_budget_period\": \"monthly\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/budgets",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"budgets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dodawanie budżetu 2 GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Bud1_MLach\",\r\n  \"active\": false,\r\n  \"notes\": \"Some notes\",\r\n  \"auto_budget_type\": \"reset\",\r\n  \"auto_budget_currency_id\": \"12\",\r\n  \"auto_budget_currency_code\": \"EUR\",\r\n  \"auto_budget_amount\": \"2000\",\r\n  \"auto_budget_period\": \"monthly\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fintech-testlab.coderslab.pl/api/v1/budgets/733",
+					"protocol": "https",
+					"host": [
+						"fintech-testlab",
+						"coderslab",
+						"pl"
+					],
+					"path": [
+						"api",
+						"v1",
+						"budgets",
+						"733"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0MCIsImp0aSI6IjA3MjNhMzI0MGE4NjljZDVlZWE3NGEyMThiZDU3NmU2NjAzZGMzZTEyOGNhYTM2ZGQzNWUyMDg3OTc2ZmY1NTM4YjgzNWNlYzVmMGI1NzQyIiwiaWF0IjoxNjk3OTcwNTI0LjM1ODIxNCwibmJmIjoxNjk3OTcwNTI0LjM1ODIxOCwiZXhwIjoxNzI5NTkyOTI0LjM0NDI1Nywic3ViIjoiMTI4MyIsInNjb3BlcyI6W119.GWfZIu6ScqDpC7HdNCf20C8qrsNQ5BeVRCciTIYpdyeqBMd0CzUV0WrwmqJvKAt72rNjH2wnD-sdPRqiwRYNEY-SCAPcGd4xgZiNsJG7Y1UMSVO2ftoNNwojd4fP8jLAKO4-Aq6wGozc1Ce9d9WrKOgmDCxrlQw_i3rucLGDv-vU9HEq7KeHVY6Q89o69f40kt6XTyhJy_2KMRQSwlt4fFyzVaCLX4U-9Saww4JH3XKAtiGJiXDqv3fGn6-sL8T6GO8FNtve2PJ3VDLJUMIvvjDimPuD3zjcCL9cg5Q-1b89AjXEtEKet5wdoIVFvQJbi2xNRrAUm3Bc9KH5b1FUDrfZ9Z7mA6dbJoX2O4BaabkPnLLJ0d4ioFi_jqDK0M4tE8ngWj5WldaHHdPjj2wvUqDG5Ok1ZsReV7xUnVPVKNNX3yCkNlKZhg18Y5pm1Lja5RBCskyabeVtGC75miLFulRpfHXNWivnJ76gzc_AJS4byC8hwC9EZ5RUlbSoCgDDg2cx1-AL17NpWsJ7liPdcBPD6MICjwd8vxELZ5upJ9dz8mmgZEWf2MkrF_zjDlGNudUpbuqC-raBP45qoHhSTF98AKfOr6moQOTfWTnF4YDpNCkZha3Idk2Zzl2OP1QVbpzoZixgsDWF1sSyzLrr6AP5qclqQHtRUvthFLq5Np0",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
