@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+ <xsl:template match="/">
+<html>
+<body> 
+  <lista_osobowa>
+	<table>
+         <td>
+			<tr><id>1</id></tr>
+			<tr><imie>Bartek</imie></tr>
+			<tr><zamieszkanie>Pcim</zamieszkanie></tr>
+			<tr><ulica>Betoniarska</ulica></tr>
+			<tr><budynek>30</budynek></tr>
+			<tr><mieszkanie>10</mieszkanie></tr>
+			<tr><telefon>22233444</telefon></tr>
+			<tr><e_mail>bartek@guzik.com</e_mail></tr>
+		</td>
+    <br></br>
+         <id>2</id>
+		 <imie>Ela</imie>
+         <zamieszkanie>Radom</zamieszkanie>
+         <ulica>Mała</ulica>
+		 <budynek>3</budynek>
+		 <mieszkanie>1</mieszkanie>
+         <telefon>444555666</telefon>
+		 <e_mail>ela@yahoo.com</e_mail>
+	 
+    <br></br>
+         <id>3</id>
+		 <imie>Edi</imie>
+         <zamieszkanie>Grójec</zamieszkanie>
+         <ulica>Krótka</ulica>
+		 <budynek>8</budynek>
+		 <mieszkanie>17</mieszkanie>
+         <telefon>666777999</telefon>
+		 <e_mail>edi@int.com</e_mail>
+	</table>
+  </lista_osobowa>
+  </body>
+</html>
+</xsl:template>
+
+</xsl:stylesheet>

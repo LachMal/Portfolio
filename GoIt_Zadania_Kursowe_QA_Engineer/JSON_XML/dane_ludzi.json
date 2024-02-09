@@ -1,0 +1,34 @@
+{
+   "ludzie": [
+      {
+         "id" 1,
+		 "imie": "Bartek",
+         "miejsce zamieszkania": "Pcim",
+         "ulica": "Betoniarska",
+		 "nr budynku": 30,
+		 "nr mieszkania": 10,
+         "telefon": 22233444,
+		 "E-mail": "bartek@guzik.com",
+      },
+      {
+         "id" 2,
+		 "imie": "Maria",
+         "miejsce zamieszkania": "Grójec",
+         "ulica": "Długa",
+		 "nr budynku": 10,
+		 "nr mieszkania": 1"a",
+         "telefon": 666555999,
+		 "E-mail": "Maria@kropka.com",
+      },
+      {
+         "id" 3,
+		 "imie": "Edward",
+         "miejsce zamieszkania": "Rzeszów",
+         "ulica": "Krótka",
+		 "nr budynku": 350,
+		 "nr mieszkania": 33,
+         "telefon": 888777666,
+		 "E-mail": "edward@znak.pl",
+      }
+   ]
+}

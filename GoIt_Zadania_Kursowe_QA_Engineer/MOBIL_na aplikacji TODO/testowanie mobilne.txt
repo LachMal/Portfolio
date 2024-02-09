@@ -1,0 +1,78 @@
+testrowanie mobilne aplikacji testowej TODO:
+analiza- ustalnie warunków
+
+	BUG1 - niespójność języka, bo język systemowy mam ustawiony polski - apk nie wpółpracuje z j.polskim, brak pełnych translacji
+
+NAJPIERW PRIORYTEZTYZUJEMY
+
+DODANIE ZADANIA
+	BUG2 - nie wygląda jak przycisk, nie wiadomo, że to można kliknąć
+	FORMULARZ - wyświetlenie pola do wprowadzania
+	BUG3 - przyciski nachodzą na formularza
+	BUG4 - zmiana nazw przycisków na DODAJ i ANULUJ, USUN
+	Bug5- kolory przycisków nieodpowiednie, małokontrastowe
+	Bug6 - placeholder w obu polach powiiny być przetłumaczone
+	Bug7 - nie wiadomo, po co są te kolorowe koła
+DOdaję notatkę (długi czas dodawania)
+	Bug8 - umieszczenie napisu Usuwać niepoprawne - przeniesienie funkcjonalności na kraniec pola notatki, zamiana go na symbol kosza
+	Bug9 - nie da się dodać notatki z tłem niebieskim
+	bug - brak wskaźnika oczekiwania na wykonanie procesu (loadingspinner)
+Notatka bez tytułu - do sprawdzenia w wymaganiach
+	Bug10 -przy systemowym ciemnym trybie nie widać czionki na białym tle
+SPRAWDZAM JAK DŁUGI TEKST NMOŻNA WKLEIĆ - STRINGGENERATOR  i przeklejam i sprawdzam
+	BUG11 -  brak pokazanego informacji o limicie /przekroczeniu limitu znaków; tytuł obcina się samoistnie
+	bug12 - gdy jest wypełniony limit znaków, to przycisk usunąć znika
+Przetestować znaki specjalne, LICZBY, BIAŁE ZNAKI, diakrytyczne, znaki z innych języków, emotki, tak żeby uniknąć zamaskowania błedów tzn ODDZIELNIE TYTUŁ, ODDZIELNIE OPIS
+	bug13 - POLA NIEZABLOKOWANE NA WPOWADZENIE tylko BIAŁĘGO ZNAKU
+POdgląd notatki
+	bug/lub zadane pytanie menagerowi - brak opcji edycji notatki
+	bug14 - zmiana napisów w Usuń i anuluj
+	bug15 - klknięcie obok okna nie zamyka podglądu notatki
+	bug16 - brak x  do zamykania okna notatki
+	bug17 - słowo "anulować" zamienić na "zamknij"
+	bug18 - ustawić przyciski "usuń" , "zamknij"
+	bug19 - usuwanie z poziomu nieotwartej notatki nie działa
+	CRITICAL bug20 - uzuzwanie z podglądu przy usuwaniu usuwają się różnie, CZĘSTO WSZYSTKIE trzeba to sprawdzić, czy kolejność uzuwania ma znaczenie, czy kolory mają znaczenie (nawet w drugirej sesji testów eksplor)
+	bug21 - aplikacja nie pyta, czy na pewno chcemy usunąć
+	bug22 - po usunięciu notatek to data wprowadzenia notatki zostaje po usunięciu notatek
+
+Sprawdzenie, czy zmiana daty w systemie zmieni datę w aplikacji
+	
+zmiana daty w systemie data zmienia się  po ponownym uruchomieniu aplikacji'
+DOdaje notatkę z właściwą datę
+Kolejne zmiany daty i dodanie zadań. Dodaje zadanie niezgonie z kalendarzem dnia tylko alfabetycznie wg dnia tygodnia
+	HighBUG23 - sortuje po nazwach dni tygodnia dodawane notatki, a nie wg daty dodania
+Przegadać designerem, jak ułożyć notatki np. do wyboru od najnowszych do najstarszych lub odwrotnie
+
+	bug - tło w którym wyświetla się notatka jest nieresponsywne niedostosowuje się do orientacji ekranu
+
+	
+zmiana języka
+	BUG - nie wygląda jak przycisk, nie wiadomo, że to można kliknąć
+zapytać,dlaczego zmiana jezyka nie jest gdzies w innym miejscu, raczej mniejsze i niepogrubione
+	redundancja - powtórzenia CHANGE to...
+	bug - skróty języków niepoprawne, mylące
+	bug - nisepójność zamykania pola zmiany języków i zamykania okna notatki (okien modalnych)
+	bug - zmiana języka działa tylko w sesji otwarcia, po ponownym uruchomieniu wraca do języka systemowego
+jeżeli język systemowy nie jest ustawiony w aplikacji to aplikacja uruchamia się w j. angielskim
+	bug - zmiana języka na wspierany przez aplikację, aplikacja tłumaczy tylko cześciowo
+KAŻDY OSOBNO JĘZYK TRZEBA SPRAWDZIĆ
+ZMiana wyglądu okna zmiany języka np. na przyciski
+
+CZY POTRZEBUJE SIECI
+Jest aplikacją natywną, bo nie potrzebuje Internetu
+
+SPrawdzenie działania, jak apka działa przy niskim poziomie baterii
+
+Czy aplikacja działa, przy dużej zajętości pamięci
+
+Typowe przerwania - apka działa (apki w tle, połączenia tel, smsy itp)
+
+	bug - zmiana trybu w ustawieniach tel na ciemny notatki piszą się białą czcionką na białym tle i nic nie widać
+	
+Czyszczenie CASHA  tej aplikacji
+	
+
+
+
+	

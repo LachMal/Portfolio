@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#ZQ-5] Brak możliwości usunięcia notatki bez wejścia w jej podgląd.</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://mallach.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [ZQ-5]&nbsp;<a href="https://mallach.atlassian.net/browse/ZQ-5">Brak możliwości usunięcia notatki bez wejścia w jej podgląd.</a>
+            <span class="subText">
+               Utworzono: 25/sty/24                   &nbsp;Zaktualizowano: 25/sty/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Do zrobienia</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Projekt:</b></td>
+        <td width="80%"><a href="https://mallach.atlassian.net/secure/BrowseProject.jspa?id=10000">Zadanie QA</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Komponenty:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Ma wpływ na wersje:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Wersje do poprawienia:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Typ:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Błąd
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priorytet:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Osoba zgłaszająca:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:fce4cff5-1355-4359-8ae8-02500cbb9dc8"
+                id="word_reporter_712020:fce4cff5-1355-4359-8ae8-02500cbb9dc8"
+                href="https://mallach.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Afce4cff5-1355-4359-8ae8-02500cbb9dc8">
+                    Małgorzata L
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Osoba przypisana:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                    Nie przypisano
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Rozwiązanie:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Nierozwiązane
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Głosy:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Etykiety:</b>
+        </td>
+        <td id="labels-10006-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Brak
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Pozostały koszt:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Czas poświęcony:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Pierwotne oszacowanie:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Środowisko:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>telefon: Samsung S10</p>
+
+<p>OS: Android ver. 12</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10006-value" class="value" bgcolor="#ffffff" width="80%">      0|i0000v:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Warunki wstępne:</b></td>
+                <td id="customfield_10037-10006-value" class="value" bgcolor="#ffffff" width="80%">      <p>Tryb CIEMNY ekranu w ustawieniach telefonu.</p>
+
+<p>Uruchomiona aplikacja TODO.</p>
+
+<p>Dodane zadanie z tłem, na którym widoczne są treści, wyświetlane na ekranie głównym.</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Kroki do odtworzenia:</b></td>
+                <td id="customfield_10034-10006-value" class="value" bgcolor="#ffffff" width="80%">      <p>Na ekranie głównym aplikacji w dodanym zadaniu dotknij napisu “Usuwać“.</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Aktualny rezultat:</b></td>
+                <td id="customfield_10035-10006-value" class="value" bgcolor="#ffffff" width="80%">      <p>Zadanie nie usuwa się.</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Oczekiwany rezultat:</b></td>
+                <td id="customfield_10036-10006-value" class="value" bgcolor="#ffffff" width="80%">      <p>Zadanie usuwa się (aplikacja może poprosić o potwierdzenie chęci usunięcia wybranego zadania).</p>
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Opis</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Widoczne na ekranie głównym zadania są niemożliwe do usunięcia poprzez dotknięcie napisu “Usuwać“.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+Wygenerowane (Thu Jan 25 20:15:17 UTC 2024) przez Małgorzata L z użyciem systemu Jira 1001.0.0-SNAPSHOT#100245-sha1:f2768d190482624d6d115560a436a7aca194bff7.
+
+</body>
+</html>

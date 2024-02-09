@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#ONLW53-956] Zakupy przed zalogowaniem i kontynuacja po zalogowaniu.				</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://jira-course.coderslab.com/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [ONLW53-956]&nbsp;<a href="https://jira-course.coderslab.com/browse/ONLW53-956">Zakupy przed zalogowaniem i kontynuacja po zalogowaniu.				</a>
+            <span class="subText">
+               Utworzono: 05/lis/23                   &nbsp;Zaktualizowano: 06/lis/23
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Do zrobienia</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Projekt:</b></td>
+        <td width="80%"><a href="https://jira-course.coderslab.com/secure/BrowseProject.jspa?id=13301">ONL_TEM_W_53</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Komponenty:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Odnośne wersje:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Wersja naprawy:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Typ:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Błąd w programie
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priorytet:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Osoba zgłaszająca:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="gondac@wp.pl" id="word_reporter_gondac@wp.pl" href="https://jira-course.coderslab.com/secure/ViewProfile.jspa?name=gondac%40wp.pl">Małgorzata Lach</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Osoba przypisana:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="gondac@wp.pl" id="word_assignee_gondac@wp.pl" href="https://jira-course.coderslab.com/secure/ViewProfile.jspa?name=gondac%40wp.pl">Małgorzata Lach</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Rozwiązanie:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Nierozwiązane
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Głosy:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Etykiety:</b>
+        </td>
+        <td id="labels-229610-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Brak
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Pozostało (oszacowanie):</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Czas poświęcony:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Pierwotne oszacowanie:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Opis</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <div class='table-wrap'>
+<table class='confluenceTable'><tbody>
+<tr>
+<td class='confluenceTd'>Browser:   Chrome ver. 118.0.5993.117,<br/>
+OS. Windows 10 Home 21H2, 2</td>
+</tr>
+<tr>
+<td class='confluenceTd'>Description: Sprawdzenie, czy zawartość koszyka wypełniona przed zalogowaniem się pozostaje niezmieniona po zalogowaniu się użytkownika?</td>
+</tr>
+<tr>
+<td class='confluenceTd'><b>Pre-conditions:</b></td>
+</tr>
+<tr>
+<td class='confluenceTd'>1. Uruchomiona strona<br/>
+<a href="https://mediamarkt.pl/" class="external-link" target="_blank" rel="nofollow noopener">https://mediamarkt.pl/</a></td>
+</tr>
+<tr>
+<td class='confluenceTd'> </td>
+</tr>
+<tr>
+<td class='confluenceTd'><b>Steps to reproduce:</b></td>
+</tr>
+<tr>
+<td class='confluenceTd'>1. Jako niezalogowany użytkownik dodaj produkt lub produkty do koszyka</td>
+</tr>
+<tr>
+<td class='confluenceTd'>2. Zaloguj się na swoje konto,</td>
+</tr>
+<tr>
+<td class='confluenceTd'> </td>
+</tr>
+<tr>
+<td class='confluenceTd'> </td>
+</tr>
+<tr>
+<td class='confluenceTd'><b>Actual result:</b></td>
+</tr>
+<tr>
+<td class='confluenceTd'>Koszyk jest pusty.</td>
+</tr>
+<tr>
+<td class='confluenceTd'> </td>
+</tr>
+<tr>
+<td class='confluenceTd'><b>Expected result:</b></td>
+</tr>
+<tr>
+<td class='confluenceTd'>Użytkownik, który rozpoczął proces zakupowy przed zalogowaniem może go kontynuować (nie rozpoczynać na nowo) po zalogowaniu. Produkty w koszyku dodane przed zalogowaniem sa widoczne w koszyku po zalogowaniu użytkownika.</td>
+</tr>
+<tr>
+<td class='confluenceTd'> </td>
+</tr>
+</tbody></table>
+</div>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+Wygenerowane (Mon Nov 06 00:03:50 GMT 2023) przez Małgorzata Lach z użyciem systemu Jira 8.22.1#822001-sha1:d584a1e5af9752a5d8b59b41fdf410e866d38003.
+
+</body>
+</html>
