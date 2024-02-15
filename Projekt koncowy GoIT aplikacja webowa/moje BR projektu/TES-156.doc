@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#TES-156] Zakres pożądanej wagi w kalkulatorze nie pokrywa się z walidacją (TAB NU)</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://malgorzlaproj.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [TES-156]&nbsp;<a href="https://malgorzlaproj.atlassian.net/browse/TES-156">Zakres pożądanej wagi w kalkulatorze nie pokrywa się z walidacją (TAB NU)</a>
+            <span class="subText">
+               Utworzono: 11/lut/24                   &nbsp;Zaktualizowano: 13/lut/24
+
+                                    &nbsp;Termin: 15/lut/24
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">DO ZROBIENIA - BUG REPORT</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Projekt:</b></td>
+        <td width="80%"><a href="https://malgorzlaproj.atlassian.net/secure/BrowseProject.jspa?id=10000">Testvengers</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Komponenty:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Ma wpływ na wersje:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Wersje do poprawienia:</b></td>
+            <td>
+                            Brak
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Typ:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Błąd
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priorytet:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Osoba zgłaszająca:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:fce4cff5-1355-4359-8ae8-02500cbb9dc8"
+                id="word_reporter_712020:fce4cff5-1355-4359-8ae8-02500cbb9dc8"
+                href="https://malgorzlaproj.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Afce4cff5-1355-4359-8ae8-02500cbb9dc8">
+                    Małgorzata L
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Osoba przypisana:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:fce4cff5-1355-4359-8ae8-02500cbb9dc8"
+                id="word_assignee_712020:fce4cff5-1355-4359-8ae8-02500cbb9dc8"
+                href="https://malgorzlaproj.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Afce4cff5-1355-4359-8ae8-02500cbb9dc8">
+                    Małgorzata L
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Rozwiązanie:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Nierozwiązane
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Głosy:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Etykiety:</b>
+        </td>
+        <td id="labels-10155-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            TAB_BR                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Pozostały koszt:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Czas poświęcony:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Pierwotne oszacowanie:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Nie określono
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Łącza zgłoszeń:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Relates</b><br/>
+                            </td>
+                        </tr>
+                                                                <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://malgorzlaproj.atlassian.net/browse/TES-83">
+                     TES-83                 </a>
+            </td>
+            <td>
+                Walidacja pól kalkulatora (TAB NU ) T...
+            </td>
+            <td>
+                W toku - TC z bugiem
+            </td>
+        </tr>
+                                        </table>
+            </td>
+        </tr>
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td>
+                <td id="customfield_10033-10155-value" class="value" bgcolor="#ffffff" width="80%">      <p>Tablet Samsung Galaxy S5e;<br/>
+Model SM - T720;<br/>
+OS: Android ver.11;</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Priority:</b></td>
+                <td id="customfield_10034-10155-value" class="value" bgcolor="#ffffff" width="80%">    High
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Severity:</b></td>
+                <td id="customfield_10035-10155-value" class="value" bgcolor="#ffffff" width="80%">    Major
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Preconditions:</b></td>
+                <td id="customfield_10036-10155-value" class="value" bgcolor="#ffffff" width="80%">      <ol>
+	<li>Strona <a href="https://slimmoms-qa.netlify.app/**" title="smart-link" class="external-link" rel="nofollow noreferrer">https://slimmoms-qa.netlify.app/**</a> musi być otwarta w przeglądarce</li>
+	<li>Kliknąć logo w nagłówku</li>
+	<li>Aplikacja wyświetla stronę “Calculate your daily calorie intake right now”</li>
+</ol>
+
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Steps:</b></td>
+                <td id="customfield_10037-10155-value" class="value" bgcolor="#ffffff" width="80%">      <ol>
+	<li>Wpisać wartości pola pożądana waga zawierające się w walidacji: 20 - 500, z uwzględnieniem wartości minimalnej i maksymalnej</li>
+</ol>
+
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Actual results:</b></td>
+                <td id="customfield_10038-10155-value" class="value" bgcolor="#ffffff" width="80%">      <p>Formularz kalkulatora w polu waga, przyjmuje wartości danych w zakresie od 45 do 120.</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Expected result do danego kroku z listy kroków:</b></td>
+                <td id="customfield_10039-10155-value" class="value" bgcolor="#ffffff" width="80%">      <p>Formularz kalkulatora w polu pożądana waga, przyjmuje wartości danych w zakresie od 20 do 500.</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Attachments:</b></td>
+                <td id="customfield_10040-10155-value" class="value" bgcolor="#ffffff" width="80%">      <p><a href="https://drive.google.com/file/d/13Dc8uxTxop5a3luvm5eZ6IqbuhUd_qs0/view?usp=drive_link" title="smart-link" class="external-link" rel="nofollow noreferrer">https://drive.google.com/file/d/13Dc8uxTxop5a3luvm5eZ6IqbuhUd_qs0/view?usp=drive_link</a> </p>
+
+<p><a href="https://drive.google.com/file/d/13QwtRQJFckDwrQyRnQ35kvQFAFl6CNj4/view?usp=drive_link" title="smart-link" class="external-link" rel="nofollow noreferrer">https://drive.google.com/file/d/13QwtRQJFckDwrQyRnQ35kvQFAFl6CNj4/view?usp=drive_link</a> </p>
+
+<p><a href="https://drive.google.com/file/d/13kasBh5z4FWn24oW7bAa6YeAAhljddxU/view?usp=drive_link" title="smart-link" class="external-link" rel="nofollow noreferrer">https://drive.google.com/file/d/13kasBh5z4FWn24oW7bAa6YeAAhljddxU/view?usp=drive_link</a> </p>
+
+<p><a href="https://drive.google.com/file/d/13_b2pqekkC3cSvUcIomdxeh728wKhVf_/view?usp=drive_link" title="smart-link" class="external-link" rel="nofollow noreferrer">https://drive.google.com/file/d/13_b2pqekkC3cSvUcIomdxeh728wKhVf_/view?usp=drive_link</a> </p>
+
+<p><a href="https://drive.google.com/file/d/131MxF9l8DcURHdMm-fyMUwFZ3bxa2IXL/view?usp=drive_link" title="smart-link" class="external-link" rel="nofollow noreferrer">https://drive.google.com/file/d/131MxF9l8DcURHdMm-fyMUwFZ3bxa2IXL/view?usp=drive_link</a> </p>
+
+<p><a href="https://drive.google.com/file/d/13n5dxb9bry-EbGB1QcTqz1BCET2urCRe/view?usp=drive_link" title="smart-link" class="external-link" rel="nofollow noreferrer">https://drive.google.com/file/d/13n5dxb9bry-EbGB1QcTqz1BCET2urCRe/view?usp=drive_link</a> </p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10155-value" class="value" bgcolor="#ffffff" width="80%">      0|i000wj:zzzzzzzzzzzzzzzzzzzzzr
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Opis</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>Formularz kalkulatora przyjmuje inne wartości niż te ujęte w specyfikacji dla pola pożądana waga. Wartości ujęte w walidacji są następujące:</p>
+
+<ul>
+	<li>waga 20 (min) - 500 (maks), pole wymagane.</li>
+</ul>
+
+
+<p>Formularz kalkulatora przyjmuje wartości z przedziału 45 - 120.</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+Wygenerowane (Thu Feb 15 19:06:47 UTC 2024) przez Małgorzata L z użyciem systemu Jira 1001.0.0-SNAPSHOT#100247-sha1:972536d58906b31eea2912f9bfe79ae550e66b11.
+
+</body>
+</html>
