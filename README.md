@@ -1,11 +1,11 @@
 # Portfolio
 
-My name is Margaret.
+Jestem zmotywowaną do realizacji ciekawych projektów oraz poszerzania swojej wiedzy i umiejętności testerką manualną z 3 – letnim doświadczeniem w branży testerskiej. 
 
-I am motivated to carry out interesting projects and to expand my knowledge and skills as a manual tester with many years of experience in working with people. 
-I'm looking for a job because I want to do what will allow me to use my knowledge, skills and experience and give me the opportunity to develop further. I would like to pursue my career as a manual tester in the direction of automation. 
-Since graduating, I've been constantly educating myself, mainly in the field of IT skills.  
-I have carried out projects in cooperation with WideLane and projects during postgraduate studies and in schools educating me to become a Manual Tester (CodersLab) and a QA Engineer (GoIt).
+Pracuję zdalnie w krakowskiej firmie 5c Sp.z.o.o. jako certyfikowany tester manualny. Jednocześnie uczę fizyki i informatyki w szkole stacjonarnej.  
 
+W pracy testerskiej kładę nacisk na skrupulatność, spostrzegawczość, otwartość, doskonałą komunikację, terminowość oraz swobodę w kwestii czasu pracy. Cenię sobie możliwość realizacji własnych pomysłów testerskich, które staram się realizować tak, aby przyczyniały się do utrzymywania wysokiego poziomu w procesach rozwoju oprogramowania. 
 
-Best regards.
+Szukam nowej stałej pracy zdalnej jako tester aplikacji, ponieważ chcę robić to, co pozwoli mi wykorzystać całą moją wiedzę i umiejętności oraz da możliwość dalszego rozwoju zawodowego w tym zakresie. 
+
+Od czasu ukończenia ścisłych studiów kształcę się i realizuję głównie w kierunku poszerzania umiejętności IT. Bardzo zainteresowało mnie testowanie aplikacji, ukończyłam kurs testowania manualnego i automatyzującego; zdobyłam certyfikat ISTQB. 
