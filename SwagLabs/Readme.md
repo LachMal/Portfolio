@@ -50,8 +50,27 @@ Tools and Skills Demonstrated
 
 Key Learning Outcomes
 This project helped me practise:
-Comparing application behaviour across different user accounts.
-Investigating failures in multi-step shopping workflows.
-Documenting reproducible issues with supporting evidence.
-Distinguishing confirmed functional failures from observations requiring requirements clarification.
-Communicating testing results through structured reports.
+1. Comparing application behaviour across different user accounts.
+2. Investigating failures in multi-step shopping workflows.
+3. Documenting reproducible issues with supporting evidence.
+4. Distinguishing confirmed functional failures from observations requiring requirements clarification.
+5. Communicating testing results through structured reports.
+
+Repository Structure
+SwagLabs/
+├── README.md
+├── Standard_users/
+│   ├── Defects_standard_user_SL-2024-02-21.csv
+│   ├── SL-SL+standard_user+Test+run+2024_02_22+ver.V1.pdf
+│   ├── Test run statndard_user.png
+│   └── Attachments/
+└── Problem_users/
+    ├── SL-2024-02-22 Bug Report.csv
+    ├── SL-SL+PROBLEM_USER+Test+run+2024_02_22+ver.+V1.pdf
+    ├── Test run problem_user.png
+    └── Attatchments_p/
+
+Project Context
+This is a public educational testing project and is separate from my commercial QA work.
+The purpose of this repository is to demonstrate my manual testing approach, documentation practices, defect investigation, and ability to present test evidence.
+
