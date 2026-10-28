@@ -39,3 +39,11 @@ The repository includes exported test execution reports, defect reports, screens
 The evidence illustrates different aspects of the testing process, including product sorting, cart operations, application state reset, checkout validation, and inconsistent product information.
 Some reported observations, particularly those related to input validation, may require confirmation against formal business requirements before being classified as confirmed product defects.
 
+Tools and Skills Demonstrated
+- Manual test execution
+- Test case analysis
+- Functional and negative testing
+- Defect identification and reporting
+- Expected versus actual result comparison
+- Evidence collection through screenshots and screen recordings
+- Test execution reporting
