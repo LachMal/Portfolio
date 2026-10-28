@@ -47,3 +47,11 @@ Tools and Skills Demonstrated
 - Expected versus actual result comparison
 - Evidence collection through screenshots and screen recordings
 - Test execution reporting
+
+Key Learning Outcomes
+This project helped me practise:
+Comparing application behaviour across different user accounts.
+Investigating failures in multi-step shopping workflows.
+Documenting reproducible issues with supporting evidence.
+Distinguishing confirmed functional failures from observations requiring requirements clarification.
+Communicating testing results through structured reports.
